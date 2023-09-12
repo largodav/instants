@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    font-family: "Cambria";
+}
+/* .header{
+    margin: 1px;
+    padding: 1px;
+    position: absolute;
+    z-index: 1;
+    border: 1px red dashed;
+    width: 60vh;
+   
+} */
+/* Animacione ZOOM */
+@keyframes zoom{
+    from{
+        scale: 1500%;
+        
+    }
+    to{
+        scale: 100%;
+        
+    }
+}
+/* Animacione desvancecer mensaje */
+@keyframes fade-out{
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+        
+    }
+}
+/*Animacion ZOOM imagenes */
+@keyframes imagenes{
+    0%{
+        transform: scale(50%);
+        -webkit-transform: scale(50%);
+        -moz-transform: scale(50%);
+        -ms-transform: scale(50%);
+        -o-transform: scale(50%);
+}
+    50%{
+        transform: scale(95%);
+        -webkit-transform: scale(95%);
+        -moz-transform: scale(95%);
+        -ms-transform: scale(95%);
+        -o-transform: scale(95%);
+}
+    100%{
+        transform: scale(100%);
+        -webkit-transform: scale(100%);
+        -moz-transform: scale(100%);
+        -ms-transform: scale(100%);
+        -o-transform: scale(100%);
+}
+}
+
+/*Animacion MENSAJES_SECCIONES*/
+@keyframes mensaje{
+    0%{
+        
+        scale: 10%;
+    }
+    50%{
+        
+        scale: 100%;
+    }
+    100%{
+        
+        scale: 150%;
+    }
+}
+
+
+
+.logo{
+     position: fixed;
+     margin-left: 5%;
+     margin-top:30px;
+     z-index: 100;
+      /* Esto es para el zomm del logo
+      view-timeline-name: --zoom;
+      view-timeline-axis: block;
+  
+      animation-timeline: --zoom;
+  
+      animation-name: zoom; */
+      
+}
+
+img.logo_instants{
+    width:15vh;
+    
+     /*Esto es para el zomm del logo */
+     view-timeline-name: --zoom;
+     view-timeline-axis: block;
+ 
+     animation-timeline: --zoom;
+ 
+     animation-name: zoom;
+   
+}
+
+
+.mensaje{
+    /* background-color: rgba(255,255,255,0.4); */
+    border: 1px red dashed;
+    width: 70%;
+    margin: 0px;
+    opacity: 0;
+    overflow: hidden;
+      /*Esto es para el fade out del logo */
+      view-timeline-name: --fade-out;
+      view-timeline-axis: block;
+  
+      animation-timeline: --fade-out;
+  
+      animation-name: fade-out;
+     
+}
+.mensaje >p{ 
+    color: white;
+    text-decoration:none;
+    font-size: 3vh;
+    
+  
+}
+.mensaje >a{
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+
+}
+.logo_facebook{
+    width: 5%;
+    margin-top: 5px;
+    
+}
+
+/* Seccion Ultimos trabajos */
+.last-job{
+    border: 1px red dashed;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    
+}
+/*F IN SECCION ULTIMOS TRABAJOS +/
+/*Seccion instants*/
+.instants{
+    border: 1px red dashed;
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+    background-color: rgb(255, 255, 255);
+    
+
+}
+.fondo_intants{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    view-timeline-name: --imagenes;
+    view-timeline-axis: block;
+    animation-timeline: --imagenes;
+    animation-name: imagenes;
+    
+}
+
+/* FIN SEECCION INSTANTS */
+
+/*Seccion clickmobilland*/
+.playmoclickland{
+    border: 1px red dashed;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+    /* overflow: hidden; */
+}
+
+.fondo_plamoclickland{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+     
+    /* scale: 200%; */
+
+    view-timeline-name: --imagenes;
+    view-timeline-axis: block;
+
+    animation-timeline: --imagenes;
+    animation-name: imagenes;
+
+}
+
+
+/* FIN SECCION PLAYMOCLICKLAND */
+
+
+/*Seccion Dioramas*/
+.dioramas{
+    border: 1px red dashed;
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+    background-color: rgb(255, 255, 255);
+}
+
+.video{
+    /* max-width: 1800px; */
+    margin-top: 0;
+    padding: 0;
+    height: 100%;
+}
+.fondo_dioramas{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+     
+    /* scale: 200%; */
+
+    view-timeline-name: --imagenes;
+    view-timeline-axis: block;
+
+    animation-timeline: --imagenes;
+    animation-name: imagenes;
+}
+
+
+/* FIN SECCION DIORAMAS */
+
+/* SECCION EN BLANCO */
+.seccion_blanco{
+    width: 100%;
+    height: 30vh;
+    margin: 0px;
+}
+
+/* FIN SECCION EN BLANCO */
+
+/* MENSAJE DE SECCIONES */
+.mensaje_secciones{
+    font-size: 20px;
+    position: absolute;
+    padding: 3px;
+    margin-left:20px;
+    margin-top:40%;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    border: 2px rgb(255, 255, 255) solid;
+
+    /* view-timeline-name: --mensaje;
+    view-timeline-axis: block;
+
+    animation-timeline: --mensaje;
+
+    animation-name: mensaje; */
+}
+/* .mensaje_dioramas{
+    margin-left: 40%;
+    font-size: 60px;
+} */
