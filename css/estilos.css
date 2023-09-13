@@ -59,6 +59,7 @@
     0%{
         margin-left: 20px;
         scale: 10%;
+        
     }
     50%{
         margin-left: 50px;
@@ -67,7 +68,8 @@
     100%{
         margin-left: 75px;
         scale: 150%;
-    }
+        border: 2px rgb(255, 255, 255) solid;
+}
 }
 
 
@@ -249,7 +251,7 @@ img.logo_instants{
     margin-top:40%;
     z-index: 1;
     color: rgb(255, 255, 255);
-    border: 2px rgb(255, 255, 255) solid;
+    /* border: 2px rgb(255, 255, 255) solid; */
 
     view-timeline-name: --mensaje;
     view-timeline-axis: block;
