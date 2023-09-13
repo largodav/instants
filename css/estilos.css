@@ -61,15 +61,15 @@
 /*Animacion MENSAJES_SECCIONES*/
 @keyframes mensaje{
     0%{
-        
+        margin-left: 20px;
         scale: 10%;
     }
     50%{
-        
+        margin-left: 50px;
         scale: 100%;
     }
     100%{
-        
+        margin-left: 75px;
         scale: 150%;
     }
 }
