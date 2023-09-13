@@ -255,12 +255,12 @@ img.logo_instants{
     color: rgb(255, 255, 255);
     border: 2px rgb(255, 255, 255) solid;
 
-    /* view-timeline-name: --mensaje;
+    view-timeline-name: --mensaje;
     view-timeline-axis: block;
 
     animation-timeline: --mensaje;
 
-    animation-name: mensaje; */
+    animation-name: mensaje;
 }
 /* .mensaje_dioramas{
     margin-left: 40%;
