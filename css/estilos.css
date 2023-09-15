@@ -16,19 +16,22 @@
 }
 /* Animacione desvancecer mensaje */
 @keyframes fade-out{
-    from{
-        opacity: 0;
+    0%{
+        opacity: 100%;
         
     }
-    to{
-        opacity: 1;
+    90%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
         
     }
 }
 /*Animacion ZOOM imagenes */
 @keyframes imagenes{
     0%{
-        opacity: 0%;
+        opacity: 30%;
         transform: scale(50%);
         -webkit-transform: scale(50%);
         -moz-transform: scale(50%);
@@ -37,14 +40,14 @@
         -webkit-animation:;
 }
     50%{
-        opacity: 75%;
+        opacity: 85%;
         transform: scale(95%);
         -webkit-transform: scale(95%);
         -moz-transform: scale(95%);
         -ms-transform: scale(95%);
         -o-transform: scale(95%);
 }
-    100%{
+    90%{
         opacity: 100%;
         transform: scale(100%);
         -webkit-transform: scale(100%);
@@ -59,16 +62,18 @@
     0%{
         margin-left: 20px;
         scale: 10%;
-        
+        text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(0, 145, 255);
     }
     50%{
         margin-left: 50px;
         scale: 100%;
+        text-shadow: 1px 1px 2px red, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(5, 5, 5);
     }
     100%{
         margin-left: 75px;
         scale: 150%;
-        border: 2px rgb(255, 255, 255) solid;
+        border-right: 3px rgb(255, 255, 255) solid;
+        text-shadow: 1px 1px 2px red, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(5, 5, 5);
 }
 }
 
@@ -79,14 +84,6 @@
      margin-left: 5%;
      margin-top:30px;
      z-index: 100;
-      /* Esto es para el zomm del logo
-      view-timeline-name: --zoom;
-      view-timeline-axis: block;
-  
-      animation-timeline: --zoom;
-  
-      animation-name: zoom; */
-      
 }
 
 img.logo_instants{
@@ -204,7 +201,7 @@ img.logo_instants{
 /*Seccion Dioramas*/
 .dioramas{
     /* border: 1px red dashed; */
-    height: 100%;
+    height: 35vh;
     width: 100%;
     /* overflow: hidden; */
     background-color: rgb(255, 255, 255);
@@ -218,7 +215,7 @@ img.logo_instants{
 }
 .fondo_dioramas{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     margin: 0px;
      
     /* scale: 200%; */
@@ -247,11 +244,12 @@ img.logo_instants{
     font-size: 20px;
     position: absolute;
     padding: 3px;
-    margin-left:20px;
-    margin-top:40%;
+    padding-right: 10px;
+    margin-left:25px;
+    margin-top:20%;
     z-index: 1;
     color: rgb(255, 255, 255);
-    /* border: 2px rgb(255, 255, 255) solid; */
+    
 
     view-timeline-name: --mensaje;
     view-timeline-axis: block;
@@ -342,13 +340,17 @@ img.logo_instants{
 } 
 .card {
     position: relative;
-    /* width: 100%;
-    height: 100%; */
-    cursor: pointer;
+    /*width: 100%;
+    height: 100%;
+    */cursor: pointer;
     border: 2px solid #fe0000;
     transform-style: preserve-3d;
     transform-origin: center right;
     transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
 }
 .card__face {
     color: white;
@@ -367,3 +369,8 @@ img.logo_instants{
 .card.is-flipped {
     transform: translateX(-100%) rotateY(-180deg);
 }
+/* FIN DE LAS ROTACIONES */
+
+/*PARA LAS TARJETAS VOLTEADAS*/
+
+/*FIN DE LAS TARAJETAS VOLTEADAS*/
