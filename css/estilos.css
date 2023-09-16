@@ -212,6 +212,7 @@ img.logo_instants{
     margin-top: 0;
     padding: 0;
     width: 100%;
+   
 }
 .fondo_dioramas{
     width: 100%;
@@ -396,7 +397,7 @@ img.logo_instants{
     position: absolute;
     padding: 3px;
     padding-right: 10px;
-    margin-left:10%;
+    margin-left:0%;
     margin-top:20px;
     z-index: 1;
     color: rgb(255, 255, 255);
