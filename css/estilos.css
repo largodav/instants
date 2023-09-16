@@ -101,8 +101,6 @@ img.logo_instants{
 
 
 .mensaje{
-    /* background-color: rgba(255,255,255,0.4); */
-    /* border: 1px red dashed; */
     width: 70%;
     margin: 0px;
     opacity: 0;
@@ -137,7 +135,6 @@ img.logo_instants{
 
 /* Seccion Ultimos trabajos */
 .last-job{
-    /* border: 1px red dashed; */
     margin: 0;
     padding: 0;
     height: 100%;
@@ -148,7 +145,6 @@ img.logo_instants{
 /*F IN SECCION ULTIMOS TRABAJOS +/
 /*Seccion instants*/
 .instants{
-    /* border: 1px red dashed; */
     height: 100%;
     width: 100%;
     /* overflow: hidden; */
@@ -171,7 +167,6 @@ img.logo_instants{
 
 /*Seccion clickmobilland*/
 .playmoclickland{
-    /* border: 1px red dashed; */
     height: 100%;
     width: 100%;
     margin: 0px;
@@ -200,7 +195,6 @@ img.logo_instants{
 
 /*Seccion Dioramas*/
 .dioramas{
-    /* border: 1px red dashed; */
     height: 35vh;
     width: 100%;
     /* overflow: hidden; */
@@ -344,7 +338,6 @@ img.logo_instants{
     /*width: 100%;
     height: 100%;
     */cursor: pointer;
-    border: 2px solid #fe0000;
     transform-style: preserve-3d;
     transform-origin: center right;
     transition: transform 1s;
