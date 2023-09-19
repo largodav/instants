@@ -86,6 +86,20 @@
     height: 30%;
     margin: 10px;
 }
+.texto_enlaces{
+    position: absolute;
+    
+}
+.enlaces{
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-right: 3px rgb(255, 255, 255) solid;
+    border-left: 3px rgb(255, 255, 255) solid;
+    text-shadow: 1px 3px 10px rgb(0, 255, 102), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(5, 5, 5);
+}
+
+
+/* ZONA INSTANTS */
 .instants{
     border: 1px rgb(255, 0, 0) solid;
     z-index: 10;
@@ -103,17 +117,27 @@
     animation-direction: alternate;
 }
 .enlaces_instants{
+    border: 1px rgb(255, 255, 255) solid;
     font-size: 2vmax;
 
-    left: -40%;
+    left: -20%;
     position: absolute;
-    width: 320px;
-    height: 500px;
-    background-color: green;
+    width: 120%;
+    
+    /* background-color: green; */
     visibility: visible;
     
     
 }
+.fondo_intants{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FIN ZONA INSTANTS */
+
+/* ZONA PLAYMOCLICKLAND */
 .playmoclickland{
     border: 1px rgb(255, 0, 0) solid;
     z-index: 9;
@@ -130,6 +154,10 @@
     animation-iteration-count: 1;
     animation-direction: alternate;
 }
+
+/* FIN ZONA CLICKMOCLICKLAND */
+
+/* ZZONA DIORAMAS */
 .dioramas{
     border: 1px rgb(255, 0, 0) solid;
     z-index: 8;
@@ -146,10 +174,6 @@
     animation-iteration-count: 1;
     animation-direction: alternate;
 }
-.enlaces{
-    color: rgb(255, 255, 255);
-    padding: 5px;
-    border-right: 3px rgb(255, 255, 255) solid;
-    border-left: 3px rgb(255, 255, 255) solid;
-    text-shadow: 1px 3px 10px rgb(0, 255, 102), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(5, 5, 5);
-}
+
+/* FIN ZONA DIORAMAS*/
+
