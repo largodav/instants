@@ -388,16 +388,50 @@ img.logo_instants{
     margin-top: 10px;
 }
 .mensaje_secciones_2{
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
     padding: 3px;
     padding-right: 10px;
     margin-left:0%;
-    margin-top:20px;
+    margin-top:10px;
     z-index: 1;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px red, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(5, 5, 5);
     border-right: 3px rgb(255, 255, 255) solid;
     
 }
+
+/*TARJETA VOLTEADA INSTANTS*/
+
+/*FIN TARJETA VOLTEADA INSTANTS*/
+
+/*TARJETA VOLTEADA PLAYMOCLICKLAND */
+.facebook_click{
+    margin-top: 30px;
+    font-size: 10px;
+    text-align: left;
+    
+}
+.facebook_click > img{
+    width: 10px;
+    margin-top: 5px;
+}
+.facebook_click > a{
+    text-decoration: none;
+}
+.enlaces_play{
+    overflow-x: scroll;
+    border: 1px rgb(255, 0, 0) solid;
+    margin: 3px;
+    height: 42vmax;
+    
+    
+}
+
+/*FIN TARJETA VOLTEADA PLAYMOCLICKLAND*/
+
+/*TARJETA VOLTEADA DIORAMAS */
+
+/*FIN TARJETA VOLTEADA DIORAMAS*/
+
 /*FIN DE LAS TARAJETAS VOLTEADAS*/
