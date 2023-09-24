@@ -35,7 +35,10 @@
         
     }
     50%{
-        opacity: 50%;
+        opacity: 60%;
+    }
+    90%{
+        opacity: 90%;
     }
     100%{
         opacity: 100%;
@@ -160,7 +163,7 @@ img.logo_instants{
 
 /*Seccion clickmobilland*/
 .playmoclickland{
-    height: 100%;
+    height: 330px;
     /* width: 100%; */
     margin: 0%;
     padding: 0%;
@@ -173,7 +176,7 @@ img.logo_instants{
 
 .fondo_plamoclickland{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     margin: 0px;
 
     view-timeline-name: --fade-in;
@@ -182,14 +185,6 @@ img.logo_instants{
     animation-timeline: --fade-in;
 
     animation-name: fade-in;
-
-    /* scale: 200%; */
-
-    /* view-timeline-name: --imagenes;
-    view-timeline-axis: block;
-
-    animation-timeline: --imagenes;
-    animation-name: imagenes; */
 
 }
 
@@ -224,13 +219,6 @@ img.logo_instants{
 
     animation-name: fade-in;
      
-    /* scale: 200%; */
-
-    /* view-timeline-name: --imagenes;
-    view-timeline-axis: block;
-
-    animation-timeline: --imagenes;
-    animation-name: imagenes; */
 }
 
 
@@ -257,15 +245,6 @@ img.logo_instants{
     color: rgb(255, 255, 255);
     border-right: 3px rgb(255, 255, 255) solid;
     text-shadow: 1px 5px 2px rgb(2, 2, 2), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(5, 5, 5);
-
-    
-
-    /* view-timeline-name: --mensaje;
-    view-timeline-axis: block;
-
-    animation-timeline: --mensaje;
-
-    animation-name: mensaje; */
 
     
 }
@@ -459,22 +438,22 @@ img.logo_instants{
 
 /*TARJETA VOLTEADA PLAYMOCLICKLAND */
 .facebook_click{
-    margin-top: 30px;
     font-size: 10px;
     text-align: left;
-    
+    display: inline;
+    margin-left: 130px;
+    margin-top: 30px;
 }
 .facebook_click > img{
     width: 10px;
-    margin-top: 5px;
-}
+   
 .facebook_click > a{
     text-decoration: none;
 }
 .enlaces_play{
     overflow-x: scroll;
     border: 1px rgb(255, 0, 0) solid;
-    margin: 3px;
+    margin-top: 300px;
     height: 42vmax;
     
     
