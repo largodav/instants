@@ -10,22 +10,24 @@
     0%{
         left: 100%;
     }
-    /* 50%{
+    25%{
         top: 50%;
-    } */
+        text-shadow: 1px 3px 5px rgb(0, 255, 102), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(5, 5, 5);
+    }
     100%{
         text-shadow: 1px 3px 10px rgb(0, 255, 102), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(5, 5, 5);
-        top: 30%;
+        top: 25%;
     }
 }
 @keyframes enlaces_click{
     0%{
         left: 100%;
     }
-    /* 50%{
+    50%{
         top: 50%;
-    } */
+    }
     100%{
+
         top: 40%;
     }
 }
@@ -33,12 +35,42 @@
     0%{
         left: 100%;
     }
-    /* 50%{
-        top: 50%;
-    } */
-    100%{
+    50%{
         top: 50%;
     }
+    100%{
+        top: 60%;
+    }
+}
+
+@keyframes ocultar{
+    0%{
+        opacity: 100%;
+        
+    }
+    90%{
+        opacity: 100%;
+    }
+    100%{
+        text-shadow: 1px 3px 10px rgb(0, 255, 102), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(5, 5, 5);
+        opacity: 0%;
+        
+    }
+}
+
+@keyframes logo{
+    0%{
+        top: 0%;
+    }
+
+    50%{
+        top: 40%;
+    }
+
+    100%{
+        top: 87%;
+    }
+
 }
 
 /*FIN ANIMACIONES*/
@@ -80,10 +112,15 @@
 .logo{
     z-index: 10;
     position: fixed;
+    top:87%;
+    animation-duration: 15s;
+    animation-name: logo;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
 }
 .logo_instants{
     z-index: 10;
-    width: 200px;
+    width: 150px;
     height: 30%;
     margin: 10px;
 }
@@ -94,17 +131,25 @@
 .enlaces{
     color: rgb(255, 255, 255);
     padding: 5px;
+    padding-bottom: 1px;
     /* border-right: 3px rgb(255, 255, 255) solid;
     border-left: 3px rgb(255, 255, 255) solid; */
     text-shadow: 50px 3px 10px rgb(0, 255, 102), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(5, 5, 5);
+    border-bottom: 1px white solid;
 }
 
 .mensaje{
     z-index: 9;
-    border: 1px rgb(255, 0, 0) solid;
+    /* border: 1px rgb(255, 0, 0) solid; */
     width: 60%;
     height: 10%;
     margin-top: 15vmax;
+    opacity: 0%;
+
+    animation-duration: 15s;
+    animation-name: ocultar;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
 }
 .mensaje > p{
     color: white;
@@ -120,21 +165,25 @@
 }
 .logo_facebook{
     width: 10px;
-    margin-top: 5px;
+    margin-top: 8px;
+    
+}
+.logo_facebook_click{
+    width: 20px;
+    margin-top: 3px;
     
 }
 
-
 /* ZONA INSTANTS */
 .instants{
-    border: 1px rgb(255, 0, 0) solid;
+    /* border: 1px rgb(255, 0, 0) solid; */
     z-index: 10;
     font-weight: 700;
     font-size: 3vmax;
     width: 30vmax;
     /* overflow: hidden; */
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 30%;
 
     animation-duration: 10s;
@@ -165,7 +214,7 @@
 
 /* ZONA PLAYMOCLICKLAND */
 .playmoclickland{
-    border: 1px rgb(255, 0, 0) solid;
+    /* border: 1px rgb(255, 0, 0) solid; */
     z-index: 9;
     font-weight: 700;
     font-size: 3vmax;
@@ -173,7 +222,7 @@
     overflow: hidden;
     position: absolute;
     top: 40%;
-    left: 30%;
+    left: 20%;
 
     animation-duration: 10s;
     animation-name: enlaces_click;
@@ -185,15 +234,15 @@
 
 /* ZZONA DIORAMAS */
 .dioramas{
-    border: 1px rgb(255, 0, 0) solid;
+    /* border: 1px rgb(255, 0, 0) solid; */
     z-index: 8;
     font-weight: 700;
     font-size: 3vmax;
     width: 30vmax;
     overflow: hidden;
     position: absolute;
-    top: 50%;
-    left: 30%;
+    top: 60%;
+    left: 10%;
 
     animation-duration: 10s;
     animation-name: enlaces_dioramas;
