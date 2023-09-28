@@ -45,29 +45,32 @@
 
 @keyframes ocultar{
     0%{
-        opacity: 100%;
+        opacity: 0%;
         
     }
     90%{
-        opacity: 100%;
+        opacity: 40%;
     }
     100%{
         text-shadow: 1px 3px 10px rgb(0, 255, 102), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(5, 5, 5);
-        opacity: 0%;
+        opacity: 100%;
         
     }
 }
 
 @keyframes logo{
     0%{
+        max-height: 400px;
         top: 0%;
     }
 
     50%{
+        max-height: 40px;
         top: 40%;
     }
 
     100%{
+        width:400px;
         top: 87%;
     }
 
@@ -120,9 +123,10 @@
 }
 .logo_instants{
     z-index: 10;
-    width: 150px;
-    height: 30%;
-    margin: 10px;
+    max-height: 40px;
+    /* width: 150px;
+    height: 30%; */
+    margin: 12px;
 }
 .texto_enlaces{
     position: absolute;
@@ -143,8 +147,9 @@
     /* border: 1px rgb(255, 0, 0) solid; */
     width: 60%;
     height: 10%;
-    margin-top: 15vmax;
-    opacity: 0%;
+    margin-top: 545px;
+    margin-left: 120px;
+    opacity: 100%;
 
     animation-duration: 15s;
     animation-name: ocultar;
