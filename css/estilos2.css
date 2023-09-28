@@ -144,12 +144,14 @@
 
 .mensaje{
     z-index: 9;
-    /* border: 1px rgb(255, 0, 0) solid; */
+     /* border: 1px rgb(255, 0, 0) solid; */
     width: 60%;
     height: 10%;
-    margin-top: 545px;
+    position: fixed;
+    top:87%;
     margin-left: 120px;
     opacity: 100%;
+    overflow: hidden;
 
     animation-duration: 15s;
     animation-name: ocultar;
@@ -159,7 +161,7 @@
 .mensaje > p{
     color: white;
     text-align: left;
-    size: 10%;
+    font-size: 17px;
 }
 
 .mensaje >a{
@@ -169,7 +171,7 @@
 
 }
 .logo_facebook{
-    width: 10px;
+    width: 7px;
     margin-top: 8px;
     
 }
