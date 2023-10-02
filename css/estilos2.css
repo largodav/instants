@@ -215,7 +215,11 @@
     width: 100%;
     height: 100%;
 }
-
+.instants a{
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+}
 
 /* FIN ZONA INSTANTS */
 
