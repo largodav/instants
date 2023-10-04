@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
     font-family: "Cambria";
+    
+}
+body{
+    background-color: rgb(0, 0, 0);
 }
 
 /*ANIMACIONES*/
@@ -263,3 +267,57 @@
 
 /* FIN ZONA DIORAMAS*/
 
+/* ZONA CARRUSEL IMAGENES */
+.carrusel{
+    z-index: 7;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px rgb(255, 0, 0) solid;
+    align-items: center;
+
+    /* display: flex;
+    flex-direction: column; */
+}
+.carrusel_instants{
+    
+    /* height: 33%; */
+    width: 50%;
+    border: 1px rgb(255, 0, 0) solid;
+    margin-left: 3px;
+    margin-top: 20px;
+    overflow: hidden;
+    /* position: fixed; */
+
+    /* flex-grow: 5; */
+}
+.imagens_instants{
+    width: 100%;
+
+}
+.carrusel_play{
+    width:60%;
+    /* height: 33%; */
+    border: 1px rgb(255, 0, 0) solid;
+    margin-left: 100px;
+    margin-top: 100px;
+    overflow: hidden;
+    /* flex-grow: 1; */
+}
+.imagens_play{
+    width: 100%;
+}
+.carrusel_dioramas{
+    width:50%;
+    /* height: 33%; */
+    border: 1px rgb(255, 0, 0) solid;
+    margin: 0px auto; 
+    margin-top: 150px;
+    overflow: hidden;
+
+    /* flex-grow: 1; */
+}
+.imagens_dioramas{
+    width: 100%;
+}
+/* FIN ZONA CARRUSEL */
